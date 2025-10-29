@@ -3,6 +3,10 @@
 ## Temat
 Predykcja jakości wina na podstawie jego cech chemicznych.
 
+## Diagram architektury systemu
+
+![Diagram architektury systemu](docs/architecture_diagram.png)
+
 ## Cel projektu
 Celem projektu jest stworzenie kompletnego pipeline’u ML, który przewiduje jakość wina (ocenę 0–10) na podstawie parametrów chemicznych. Pipeline obejmuje ETL, modelowanie, API i prosty frontend do testowania predykcji.
 
