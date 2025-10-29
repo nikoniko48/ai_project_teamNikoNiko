@@ -1,0 +1,9 @@
+kedro>=0.18
+pandas
+numpy
+scikit-learn
+fastapi
+uvicorn
+streamlit
+apache-airflow==2.6.3
+docker
