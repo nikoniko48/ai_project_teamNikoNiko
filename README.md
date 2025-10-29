@@ -17,10 +17,21 @@ Celem projektu jest stworzenie kompletnego pipeline’u ML, który przewiduje ja
 - Zawartość: chemiczne parametry wina (pH, siarczany, kwasy, alkohol itd.) oraz ocena jakości (`quality`).
 
 ## Zakres projektu (wstępny)
-1. **ETL / przetwarzanie danych** (Kedro)  
-   - Wczytanie danych z CSV, czyszczenie braków, wstępna analiza  
+
+1. **ETL / przetwarzanie danych (Kedro)**  
+   Wczytanie danych z CSV, czyszczenie braków i wstępna analiza.
 2. **Przygotowanie danych (preprocessing)**  
-   - Normalizacja / standaryzacja cech, podział na zbiory train/test  
+   Normalizacja cech i podział na zbiory treningowe i testowe.
+3. **Trening modelu ML**  
+   Prosty model RandomForest lub XGBoost do przewidywania jakości wina.
+4. **API backend (FastAPI)**  
+   Endpoint `/predict` do wysyłania parametrów wina i odbierania przewidywanej jakości.
+5. **UI frontend (Streamlit)**  
+   Prosty interfejs do wpisywania parametrów wina i wyświetlania predykcji.
+6. **Automatyzacja (Airflow)**  
+   Uruchamianie pipeline’u ETL → preprocessing → model → ewaluacja.
+7. **Wdrożenie (Docker)**  
+   Konteneryzacja backendu, frontendu i modelu dla łatwego uruchamiania aplikacji.
 
 ## Struktura danych
 - **X (features):** chemiczne parametry wina (pH, siarczany, kwasy, alkohol itd.)  
