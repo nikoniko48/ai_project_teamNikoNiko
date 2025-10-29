@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+data/
+.vscode/
+.ipynb_checkpoints/
+pip-wheel-metadata/
+.envrc
+.DS_Store
